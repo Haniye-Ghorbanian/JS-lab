@@ -39,7 +39,10 @@ if (ask == true) {
                 } else if (result < 0) {
 
                     // If everyone can seat and also there will be extra free seats or seat
+
+                    // Calculates existing free seats in the bus
                     let FreeSeats = Cap - On;
+                    // Calculates extra free seats left in the bus
                     let ExtraFreeSeats = Cap - (On + Waite);
                     console.log('The bus has' + ' ' + FreeSeats + ' ' + 'free seats, so all of you can get on the bus and also there will be extra' + ' ' + ExtraFreeSeats + ' ' + ' extra seats. Enjoy your trip! 😉');
 
