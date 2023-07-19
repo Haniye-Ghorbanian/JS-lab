@@ -78,6 +78,7 @@ if (ask == true) {
 
             } else if (cap == 0) {
 
+                // If 0 is entered in cap prompt box
                 console.log('If you knew the bus has no free seats then why are you asking ? 😂');
 
             } else {
@@ -89,6 +90,7 @@ if (ask == true) {
 
         } else if (wait == 0) {
 
+            // If 0 is entered in wait prompt box
             console.log('So why do you want to know how many people can get on the bus if no one is waiting 😂');
 
         } else {
