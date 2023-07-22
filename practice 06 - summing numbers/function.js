@@ -10,7 +10,7 @@ function sum(input) {
         return 0;
     }
 
-    let total = number + sum(prompt("Enter a number (or 0 to finish):"));
+    let total = number + sum(prompt("Enter a number (Enter 0 to finish):"));
 
     return total;
 }
