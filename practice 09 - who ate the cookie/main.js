@@ -4,7 +4,7 @@ let userInput = Number(prompt('Enter something and I will tell you who ate the c
 let input = userInput
 
 
-// Call the function sumMul (n, m)
+// Call the function WhoAteTheCookie(input)
 let answer = WhoAteTheCookie (userInput);
 
 
