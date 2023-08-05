@@ -1,6 +1,6 @@
 
 
-
+// First Solution
 
 function passwordGenerator(length) {
 
@@ -31,6 +31,32 @@ function passwordGenerator(length) {
 return password;
 
 }
+
+
+
+
+// Second Solution
+
+function PasswordGenerator(length) {
+
+    const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let password = '';
+  
+    for (let i = 0; i < length; i++) {
+
+      const randomIndex= Math.floor(Math.random() * characters.length);
+
+      const RandomChar = characters.charAt(randomIndex);
+
+      password += RandomChar;
+
+    }
+  
+    return password;
+    
+  }
+  
+ 
 
 
 
