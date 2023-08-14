@@ -1,0 +1,41 @@
+
+
+
+body {
+    height: 800vh;
+    margin: 0;
+}
+
+header {
+    padding: 1rem;
+    background-color: #444;
+    color: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* transition: .5s; */
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+header.change {
+    background-color: darkgoldenrod;
+    padding: 4px;
+}
+
+header.hide {
+    /* display: none; */
+    /* transition: 0.5s; */
+    opacity: 0;
+    pointer-events: none;
+}
