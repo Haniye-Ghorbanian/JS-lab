@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+button {
+    background-color: transparent;
+    outline: none;
+}
+
+
+
+
+main {
+    height: inherit;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.scores {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.scores div {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+
+.scores section {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-evenly;
+}
+
+
+
+
+span {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+.container {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+.board {
+    
+    height: 360px;
+    width: 360px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0;
+   
+}
+
+
+
+
+
+.cell {
+    height: 120px;
+    width: 120px;
+    border: 2.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+
+
+
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8){
+    border-bottom: none;
+}
+
+
+
+
+
+.cell:nth-child(3n + 1){
+    border-left: none;
+}
+
+
+
+
+
+.cell:nth-child(3n + 3){
+    border-right: none;
+}
+
+
+
+
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after {
+    content: '';
+    width: 20px;
+    height: 100px   ;
+    background-color: white;
+    position: absolute;
+}
+
+
+
+
+
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after{
+    background-color: rgb(174, 173, 173);
+}
+
+
+
+
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.o):hover::before{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::after{
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+.cell.o::after,
+.cell.o::before,
+.board.o .cell:not(.x):not(.o):hover::after,
+.board.o .cell:not(.x):not(.o):hover::before {
+    content: '';
+    border-radius: 50%;
+ 
+}
+
+
+
+
+
+.cell.o::before,
+.board.o .cell:not(.x):not(.o):hover::before{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+
+.board.o .cell:not(.x):not(.o):hover::before,
+.board.o .cell:not(.x):not(.o):hover::after {
+    background-color: rgb(174, 173, 173);
+}
+
+
+
+
+
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::after{
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+
+
+
+
+
+.cell.x,
+.cell.o {
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+.buttons {
+    width: 30%;
+    height: 100vh;
+}
+
+
+
