@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow-Shining</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+         body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #004080;
+        }
+
+        .arrows {
+            height: 400px;
+            width: 400px;
+            position: relative;
+           
+        }
+
+        .arrowUp {
+            top: 20px;
+            right: 35%;
+        }
+
+        .arrowRight {
+            top: 36%;
+            right: 35px;
+        }
+
+        .arrowDown {
+            bottom: 10px;
+            right: 35%;
+        }
+
+        .arrowLeft {
+            top: 36%;
+            left: 29px;
+        }
+
+
+        i {
+            font-size: 8em !important;
+            position: absolute;
+            color: #0080FF !important;
+            
+        }
+
+        .pressed {
+            text-shadow:-1px 4px 12px rgb(77, 166, 255, .5); 
+            scale: 1.2;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="arrows">
+        <i class="arrowUp fa-solid fa-chevron-up"></i>
+        <i class="arrowRight fa-solid fa-chevron-right"></i>
+        <i class="arrowDown fa-solid fa-chevron-down"></i>
+        <i class="arrowLeft fa-solid fa-chevron-left"></i>
+    </div>
+    
+    
+</body>
+
+</html>
